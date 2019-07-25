@@ -1,0 +1,77 @@
+body
+{
+   margin: 0%;
+   padding: 0%;
+}
+.hero{
+    height: 100vh;
+    width: 100%;
+    background-image:url(https://img.freepik.com/free-photo/white-cloud-sky-background_74190-4646.jpg?size=626&ext=jpg); 
+    background-size:cover;
+    background-position: center;
+    position: relative; 
+    overflow-x: hidden;
+}
+.highway
+{
+   height: 170px;
+   width: 500%;
+   display: block;
+   background-image: url(https://clipartstation.com/wp-content/uploads/2017/11/straight-road-clipart-8.jpg);
+   position: absolute; 
+   bottom: 0;
+   left: 0;
+   right: 0;
+   z-index: 1;
+   background-repeat: repeat-x;
+   animation: highway 5s linear infinite;
+}
+@keyframes highway
+{
+    100%{
+       transform: translateX(-2400px);
+        }       
+}
+.city
+{
+   height: 400px;
+   width: 1000%;
+   background-image: url(https://cdn.pixabay.com/photo/2015/09/15/06/20/panorama-940490_960_720.png);
+   position: absolute;
+   bottom : 120px;
+   left: 0;
+   right: 0;
+   z-index: 1;
+   display: block;
+   background-repeat: repeat-x;
+   animation: city 20s linear infinite;
+}
+@keyframes city
+{
+   100%{
+      transform: translateX(-1400px) 
+       }
+}
+.car
+{
+   width: 400px;
+   left: 50%;
+   bottom: 100px;
+   transform: translateX(-50%);
+   position: absolute;
+   z-index: 2;
+}
+.car img
+{
+   width: 100%;
+   animation: car 1s linear infinite;
+}
+@keyframes car
+{
+   100%{
+      transform: translateY(2px);   
+       }
+   50%{
+     transform: translateY(-2px);
+      }    
+}
